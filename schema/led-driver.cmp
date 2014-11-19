@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2014-11-15 BZR 5288)-product   date = czw, 20 lis 2014, 00:00:49
+
+BeginCmp
+TimeStamp = /53B6F594;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = Discret:C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B6F4DC;
+Reference = C2;
+ValeurCmp = 3300uF;
+IdModule  = Capacitors_ThroughHole:Capacitor16x25RM7.5;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B8172D;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = Discret:D6;
+EndCmp
+
+BeginCmp
+TimeStamp = /53BB445F;
+Reference = IC1;
+ValeurCmp = ATTINY85-P;
+IdModule  = Sockets_DIP:DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /54589544;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B7D1F6;
+Reference = L1;
+ValeurCmp = 330uH;
+IdModule  = local:Choke_Toroid_14x24mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = /54589691;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = Connect:AK300-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /546CFEA7;
+Reference = P2;
+ValeurCmp = CONN_3;
+IdModule  = local:AK300-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54589D34;
+Reference = Q1;
+ValeurCmp = BS107;
+IdModule  = Discret:TO92DGS;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B81717;
+Reference = Q2;
+ValeurCmp = IRF9530;
+IdModule  = Discret:TO220GDS;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B81834;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B81E45;
+Reference = R2;
+ValeurCmp = 240R;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B8196D;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B817CC;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B6F5D5;
+Reference = R10;
+ValeurCmp = 10k;
+IdModule  = Discret:R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /53B6F437;
+Reference = U1;
+ValeurCmp = LM7805;
+IdModule  = Discret:LM78XX-TO92;
+EndCmp
+
+EndListe

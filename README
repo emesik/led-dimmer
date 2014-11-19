@@ -1,0 +1,20 @@
+LED lighting dimmer
+
+My aim was to create a dimmer for a long LED stripe which would go around a big room. I didn't
+want to output raw PWM and have around 20m of cable acting as antenna, even though the frequency
+could be low and theoretically harmless. For that reason the circuit has two modules:
+
+	1. PWM generator with ATtiny85 microcontroller, two MOSFETs and potentiometer input
+	2. LC filter with cutoff frequency just a bit above 150Hz
+
+The final output is flat voltage depending on the PWM duty cycle. There is possibility, however, to
+bypass the filter.
+
+I used DTP-24 ferrite powder ring choke, rated up to 6A. That limits the circuit to 72W output.
+The main MOSFET allows even 12A of continuous output at 25°C, so the max power depends mostly on
+the choke you choose.
+
+TODO:
+	* So far tested it with tiny load. Must see how it behaves with a few meters of LED stripe.
+	* The table of potentiometer to PWM duty cycle translation is still far from perfect and fails
+	  to provide linear dimming.

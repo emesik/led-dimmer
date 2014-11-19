@@ -1,0 +1,10 @@
+.*
+!.gitignore
+*.swp
+*.o
+*.a
+*.elf
+*.hex
+*.map
+*.bak
+*-bak

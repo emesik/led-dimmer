@@ -1,0 +1,429 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:led-driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "13 nov 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5650 3000 2    60   Output ~ 0
+LED_filter
+Text GLabel 5650 3500 2    60   Input ~ 0
+GND
+$Comp
+L +12V #PWR01
+U 1 1 53B6F3E7
+P 1300 900
+F 0 "#PWR01" H 1300 850 20  0001 C CNN
+F 1 "+12V" H 1300 1000 30  0000 C CNN
+F 2 "" H 1300 900 60  0000 C CNN
+F 3 "" H 1300 900 60  0000 C CNN
+	1    1300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805 U1
+U 1 1 53B6F437
+P 1650 1750
+F 0 "U1" H 1800 1554 60  0000 C CNN
+F 1 "LM7805" H 1650 1950 60  0000 C CNN
+F 2 "Discret:LM78XX-TO92" H 1650 1750 60  0000 C CNN
+F 3 "~" H 1650 1750 60  0000 C CNN
+	1    1650 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 53B6F485
+P 1300 2500
+F 0 "#PWR02" H 1300 2500 30  0001 C CNN
+F 1 "GND" H 1300 2430 30  0001 C CNN
+F 2 "" H 1300 2500 60  0000 C CNN
+F 3 "" H 1300 2500 60  0000 C CNN
+	1    1300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 53B6F492
+P 2150 2000
+F 0 "#PWR03" H 2150 2000 30  0001 C CNN
+F 1 "GND" H 2150 1930 30  0001 C CNN
+F 2 "" H 2150 2000 60  0000 C CNN
+F 3 "" H 2150 2000 60  0000 C CNN
+	1    2150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 53B6F547
+P 4800 4600
+F 0 "#PWR04" H 4800 4600 30  0001 C CNN
+F 1 "GND" H 4800 4530 30  0001 C CNN
+F 2 "" H 4800 4600 60  0000 C CNN
+F 3 "" H 4800 4600 60  0000 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 53B6F594
+P 2450 1950
+F 0 "C1" H 2450 2050 40  0000 L CNN
+F 1 "100n" H 2456 1865 40  0000 L CNN
+F 2 "Discret:C1" H 2488 1800 30  0000 C CNN
+F 3 "~" H 2450 1950 60  0000 C CNN
+	1    2450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 53B6F5D5
+P 5050 1350
+F 0 "R10" V 5130 1350 40  0000 C CNN
+F 1 "10k" V 5057 1351 40  0000 C CNN
+F 2 "Discret:R3" V 4980 1350 30  0000 C CNN
+F 3 "~" H 5050 1350 30  0000 C CNN
+	1    5050 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 53B6F741
+P 5800 1400
+F 0 "#PWR05" H 5800 1400 30  0001 C CNN
+F 1 "GND" H 5800 1330 30  0001 C CNN
+F 2 "" H 5800 1400 60  0000 C CNN
+F 3 "" H 5800 1400 60  0000 C CNN
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 2100 2    60   Output ~ 0
+PWM
+Text GLabel 2150 3250 0    60   Input ~ 0
+PWM
+$Comp
+L +12V #PWR06
+U 1 1 53B7D182
+P 1900 2950
+F 0 "#PWR06" H 1900 2900 20  0001 C CNN
+F 1 "+12V" H 1900 3050 30  0000 C CNN
+F 2 "" H 1900 2950 60  0000 C CNN
+F 3 "" H 1900 2950 60  0000 C CNN
+	1    1900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 53B7D1F6
+P 4300 3000
+F 0 "L1" V 4250 3000 40  0000 C CNN
+F 1 "330uH" V 4400 3000 40  0000 C CNN
+F 2 "local:Choke_Toroid_14x24mm_Vertical" H 4300 3000 60  0000 C CNN
+F 3 "~" H 4300 3000 60  0000 C CNN
+	1    4300 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MOSFET_P Q2
+U 1 1 53B81717
+P 3450 3100
+F 0 "Q2" H 3450 3290 60  0000 R CNN
+F 1 "IRF9530" H 3450 2920 60  0000 R CNN
+F 2 "Discret:TO220GDS" V 3450 3100 60  0000 C CNN
+F 3 "~" H 3450 3100 60  0000 C CNN
+	1    3450 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L DIODE D1
+U 1 1 53B8172D
+P 3900 3250
+F 0 "D1" H 3900 3350 40  0000 C CNN
+F 1 "DIODE" H 3900 3150 40  0000 C CNN
+F 2 "Discret:D6" H 3900 3250 60  0000 C CNN
+F 3 "~" H 3900 3250 60  0000 C CNN
+	1    3900 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 53B817CC
+P 2800 3300
+F 0 "R4" V 2880 3300 40  0000 C CNN
+F 1 "10k" V 2807 3301 40  0000 C CNN
+F 2 "Discret:R3" V 2730 3300 30  0000 C CNN
+F 3 "~" H 2800 3300 30  0000 C CNN
+	1    2800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 53B81834
+P 3150 3750
+F 0 "R1" V 3230 3750 40  0000 C CNN
+F 1 "1k" V 3157 3751 40  0000 C CNN
+F 2 "Discret:R3" V 3080 3750 30  0000 C CNN
+F 3 "~" H 3150 3750 30  0000 C CNN
+	1    3150 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 53B8192F
+P 2800 4600
+F 0 "#PWR07" H 2800 4600 30  0001 C CNN
+F 1 "GND" H 2800 4530 30  0001 C CNN
+F 2 "" H 2800 4600 60  0000 C CNN
+F 3 "" H 2800 4600 60  0000 C CNN
+	1    2800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 53B8196D
+P 2450 4500
+F 0 "R3" V 2530 4500 40  0000 C CNN
+F 1 "10k" V 2457 4501 40  0000 C CNN
+F 2 "Discret:R3" V 2380 4500 30  0000 C CNN
+F 3 "~" H 2450 4500 30  0000 C CNN
+	1    2450 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 53B6F4DC
+P 4800 3250
+F 0 "C2" H 4800 3350 40  0000 L CNN
+F 1 "3300uF" H 4806 3165 40  0000 L CNN
+F 2 "Capacitors_ThroughHole:Capacitor16x25RM7.5" H 4838 3100 30  0000 C CNN
+F 3 "~" H 4800 3250 60  0000 C CNN
+	1    4800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 53B81E45
+P 2200 3850
+F 0 "R2" V 2280 3850 40  0000 C CNN
+F 1 "240R" V 2207 3851 40  0000 C CNN
+F 2 "Discret:R3" V 2130 3850 30  0000 C CNN
+F 3 "~" H 2200 3850 30  0000 C CNN
+	1    2200 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L ATTINY85-P IC1
+U 1 1 53BB445F
+P 3900 1950
+F 0 "IC1" H 2750 2350 40  0000 C CNN
+F 1 "ATTINY85-P" H 4900 1550 40  0000 C CNN
+F 2 "Sockets_DIP:DIP-8__300" H 4900 1950 35  0000 C CIN
+F 3 "~" H 3900 1950 60  0000 C CNN
+	1    3900 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 54589544
+P 6250 1050
+F 0 "K1" V 6200 1050 50  0000 C CNN
+F 1 "CONN_3" V 6300 1050 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6250 1050 60  0000 C CNN
+F 3 "~" H 6250 1050 60  0000 C CNN
+	1    6250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 54589691
+P 950 1000
+F 0 "P1" V 900 1000 40  0000 C CNN
+F 1 "CONN_2" V 1000 1000 40  0000 C CNN
+F 2 "Connect:AK300-2" H 950 1000 60  0000 C CNN
+F 3 "~" H 950 1000 60  0000 C CNN
+	1    950  1000
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5500 1050 0    60   Input ~ 0
+POT
+$Comp
+L MOSFET_N Q1
+U 1 1 54589D34
+P 2700 4150
+F 0 "Q1" H 2710 4320 60  0000 R CNN
+F 1 "BS107" H 2710 4000 60  0000 R CNN
+F 2 "Discret:TO92DGS" H 2700 4150 60  0000 C CNN
+F 3 "~" H 2700 4150 60  0000 C CNN
+	1    2700 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2150 1700 2200
+Wire Wire Line
+	1700 2200 2550 2200
+Wire Wire Line
+	2150 2000 2150 1700
+Wire Wire Line
+	2150 1700 2550 1700
+Wire Wire Line
+	1400 1750 1300 1750
+Wire Wire Line
+	1300 1100 1300 2500
+Wire Wire Line
+	1700 900  1700 1350
+Wire Wire Line
+	2450 1750 2450 1700
+Connection ~ 2450 1700
+Wire Wire Line
+	2450 2150 2450 2200
+Connection ~ 2450 2200
+Wire Wire Line
+	5300 1350 5500 1350
+Wire Wire Line
+	5500 1350 5500 1700
+Wire Wire Line
+	2000 1350 4800 1350
+Wire Wire Line
+	2000 950  2000 2200
+Connection ~ 2000 2200
+Wire Wire Line
+	2000 950  5900 950 
+Connection ~ 2000 1350
+Wire Wire Line
+	3900 2800 3900 3050
+Connection ~ 3900 3000
+Wire Wire Line
+	3900 3450 3900 3500
+Wire Wire Line
+	2800 3550 2800 3950
+Wire Wire Line
+	2800 3000 2800 3050
+Connection ~ 2800 3000
+Wire Wire Line
+	2800 4350 2800 4600
+Wire Wire Line
+	2700 4500 2800 4500
+Connection ~ 2800 4500
+Wire Wire Line
+	2200 4100 2200 4500
+Wire Wire Line
+	1900 2950 1900 3000
+Wire Wire Line
+	3650 3000 4000 3000
+Wire Wire Line
+	4800 3000 4800 3050
+Connection ~ 4800 3000
+Wire Wire Line
+	3900 3500 5650 3500
+Wire Wire Line
+	4800 3450 4800 4600
+Connection ~ 4800 3500
+Wire Wire Line
+	1900 3000 3250 3000
+Wire Wire Line
+	3450 3300 3450 3750
+Wire Wire Line
+	3450 3750 3400 3750
+Wire Wire Line
+	2900 3750 2800 3750
+Connection ~ 2800 3750
+Wire Wire Line
+	2200 4150 2500 4150
+Wire Wire Line
+	5500 1700 5250 1700
+Wire Wire Line
+	6100 2100 5250 2100
+Connection ~ 2200 4150
+Wire Wire Line
+	2150 3250 2200 3250
+Wire Wire Line
+	2200 3250 2200 3600
+Wire Wire Line
+	5250 1800 5600 1800
+Wire Wire Line
+	5600 1800 5600 1050
+Wire Wire Line
+	5500 1050 5900 1050
+Wire Wire Line
+	5800 1400 5800 1150
+Wire Wire Line
+	5800 1150 5900 1150
+Wire Wire Line
+	1700 900  1300 900 
+Connection ~ 1300 1750
+Connection ~ 5500 3500
+Wire Wire Line
+	5500 3500 5500 3350
+Wire Wire Line
+	5500 3350 6650 3350
+Wire Wire Line
+	5500 3000 5500 3250
+Connection ~ 5500 3000
+Wire Wire Line
+	4600 3000 5650 3000
+Connection ~ 5600 1050
+NoConn ~ 5250 1900
+NoConn ~ 5250 2000
+NoConn ~ 5250 2200
+Wire Wire Line
+	5500 3250 6650 3250
+Wire Wire Line
+	6650 3150 6350 3150
+Wire Wire Line
+	6350 3150 6350 2800
+Wire Wire Line
+	3900 2800 6500 2800
+$Comp
+L CONN_3 P2
+U 1 1 546CFEA7
+P 7000 3250
+F 0 "P2" V 6950 3250 50  0000 C CNN
+F 1 "CONN_3" V 7050 3250 40  0000 C CNN
+F 2 "local:AK300-3" H 7000 3250 60  0001 C CNN
+F 3 "" H 7000 3250 60  0000 C CNN
+	1    7000 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 2800
+Text GLabel 6500 2800 2    60   Output ~ 0
+LED_nofilter
+$EndSCHEMATC
